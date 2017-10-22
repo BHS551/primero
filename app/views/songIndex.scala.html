@@ -1,0 +1,10 @@
+@(songs : Set[Song])
+@layout("All Songs"){
+    <h1>All Songs</h1>
+    @for(song <- songs){
+        <a href="@routes.SongController.show(song.id)">@song.name</a>
+        <p>Author: @song.author </p>
+        <p>Length: @song.length </p>
+    }
+    <a href="@routes.SongController.create()">Create song</a>
+}

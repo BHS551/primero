@@ -1,0 +1,12 @@
+@(songForm: Form[Song])
+@import helper._
+@layout("Edit Song"){<h1>edit song</h1>
+    @helper.form(action = routes.SongController.update()){
+        @helper.inputText(songForm("id"))
+        @helper.inputText(songForm("name"))
+        @helper.inputText(songForm("length"))
+        @helper.inputText(songForm("author"))
+
+        <input type="submit" value="Submit Changes">
+    }
+}

@@ -1,0 +1,15 @@
+@(song : Song)
+@layout(song.name){
+
+    <h2>@song.name</h2>
+    <h3>author: </h3>
+
+    <p>@song.author</p>
+
+    <h3>length: </h3>
+
+    <p>@song.length</p>
+
+    <a href="@routes.SongController.edit(song.id)">Edit</a>
+    <a href="@routes.SongController.destroy(song.id)">Delete</a>
+}
