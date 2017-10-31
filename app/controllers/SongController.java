@@ -38,7 +38,7 @@ public class SongController extends Controller{
 	// Todas las canciones
 	public Result save() {
 		Form<Song> formSong = formFactory.form(Song.class).bindFromRequest();
-		Song song = new Song(Integer.parseInt(formSong.field("id").value().toString()), formSong.field("name").value().toString(), Integer.parseInt(formSong.field("length").value().toString()), formSong.field("author").value().toString());
+		Song song = new Song(Integer.parseInt(formSong.field("id").value()), formSong.field("name").value(), Integer.parseInt(formSong.field("length").value()), formSong.field("author").value());
 		Song.addSong(song);
 		return redirect(routes.SongController.index());
 	}
@@ -58,7 +58,7 @@ public class SongController extends Controller{
 	public Result update() {
 		
 		Form<Song> formSong = formFactory.form(Song.class).bindFromRequest();
-		Song song = new Song(Integer.parseInt(formSong.field("id").value().toString()), formSong.field("name").value().toString(), Integer.parseInt(formSong.field("length").value().toString()), formSong.field("author").value().toString());
+		Song song = new Song(Integer.parseInt(formSong.field("id").value()), formSong.field("name").value(), Integer.parseInt(formSong.field("length").value()), formSong.field("author").value());
 		Song oldSong = Song.findById(song.id);
 
 		if(oldSong == null) {
