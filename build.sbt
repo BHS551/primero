@@ -31,3 +31,7 @@ libraryDependencies ++= Seq(
 )
 
 libraryDependencies += filters
+
+//enables play Ebean plugin
+lazy val myProject = (project in file("."))
+  .enablePlugins(PlayJava, PlayEbean)

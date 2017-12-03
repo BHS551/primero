@@ -1,19 +1,10 @@
 package controllers;
 
-
-import java.sql.SQLException;
-import akka.http.javadsl.model.headers.Connection;
 import play.mvc.*;
-
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.CompletionStage;
-import javax.inject.Inject;
 
 import play.mvc.Controller;
 
-import views.html.*;
+import views.html.index;
 
 
 
@@ -23,8 +14,8 @@ import views.html.*;
  */
 public class HomeController extends Controller{
 
-	public Result index(String nombre, String apellido) {
-		return ok(index.render(nombre, apellido));
+	public Result index() {
+		return ok(index.render());
 	}
-	
+
 }

@@ -1,33 +1,4 @@
 compile
-exit
-compile
-exit
-compile
-exit
-compile
-eclipse
-compile
-sbt -run
-run
-exit
-run
-debbug
-debug
-run
-dependecies
-run
-compile
-run
-compile
-run
-console
-debug
-debug run
-debug run;
-jvm-debug 9999 run
-activator -jvm-debug 9999 run
-play eclipsify
-debug
 run
 compile
 run
@@ -35,17 +6,11 @@ compile
 run
 compile
 run
-play
+compile
+run
+compile
 run
 compile
 run
 compile
-start
-run
-compile
-run}
-run
-runt
-run
-}}
 run

@@ -34,7 +34,7 @@ object songCreate extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api
 Seq[Any](format.raw/*1.25*/("""
 """),_display_(/*3.2*/layout("Create Song")/*3.23*/{_display_(Seq[Any](format.raw/*3.24*/("""
     """),format.raw/*4.5*/("""<h1>create song</h1>
-    """),_display_(/*5.6*/helper/*5.12*/.form(action = routes.SongController.save())/*5.56*/{_display_(Seq[Any](format.raw/*5.57*/("""
+    """),_display_(/*5.6*/helper/*5.12*/.form(CSRF(routes.SongController.save()))/*5.53*/{_display_(Seq[Any](format.raw/*5.54*/("""
         """),_display_(/*6.10*/helper/*6.16*/.inputText(songForm("id"))),format.raw/*6.42*/("""
         """),_display_(/*7.10*/helper/*7.16*/.inputText(songForm("name"))),format.raw/*7.44*/("""
         """),_display_(/*8.10*/helper/*8.16*/.inputText(songForm("length"))),format.raw/*8.46*/("""
@@ -58,10 +58,10 @@ Seq[Any](format.raw/*1.25*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 21 23:43:48 COT 2017
+                  DATE: Sun Nov 05 20:49:55 COT 2017
                   SOURCE: C:/Users/551br/Documents/Repos/play/primero/app/views/songCreate.scala.html
-                  HASH: 88d413f4b3c48f8d6933103a292394455e7e90d7
-                  MATRIX: 957->1|1053->27|1098->24|1126->45|1155->66|1193->67|1225->73|1277->100|1291->106|1343->150|1381->151|1418->162|1432->168|1478->194|1515->205|1529->211|1577->239|1614->250|1628->256|1678->286|1715->297|1729->303|1779->333|1818->345|1899->396
+                  HASH: 328f7742794f12708d4d2482dfe1f54e651f3bea
+                  MATRIX: 957->1|1053->27|1098->24|1126->45|1155->66|1193->67|1225->73|1277->100|1291->106|1340->147|1378->148|1415->159|1429->165|1475->191|1512->202|1526->208|1574->236|1611->247|1625->253|1675->283|1712->294|1726->300|1776->330|1815->342|1896->393
                   LINES: 28->1|31->2|34->1|35->3|35->3|35->3|36->4|37->5|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|41->9|41->9|41->9|43->11|44->12
                   -- GENERATED --
               */

@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/551br/Documents/Repos/play/primero/conf/routes
-// @DATE:Sat Oct 21 23:43:46 COT 2017
+// @DATE:Wed Nov 01 18:22:03 COT 2017
 
 import play.api.mvc.Call
 
@@ -77,9 +77,9 @@ package controllers {
 
   
     // @LINE:6
-    def index(nombre:String, apellido:String): Call = {
+    def index(): Call = {
       
-      Call("GET", _prefix + { _defaultPrefix } + "index/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("nombre", nombre)) + "/" + play.core.routing.dynamicString(implicitly[play.api.mvc.PathBindable[String]].unbind("apellido", apellido)))
+      Call("GET", _prefix)
     }
   
   }

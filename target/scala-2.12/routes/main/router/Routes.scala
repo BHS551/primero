@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/551br/Documents/Repos/play/primero/conf/routes
-// @DATE:Sat Oct 21 23:43:46 COT 2017
+// @DATE:Wed Nov 01 18:22:03 COT 2017
 
 package router
 
@@ -44,7 +44,7 @@ class Routes(
   }
 
   def documentation = List(
-    ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """index/""" + "$" + """nombre<[^/]+>/""" + "$" + """apellido<[^/]+>""", """controllers.HomeController.index(nombre:String, apellido:String)"""),
+    ("""GET""", this.prefix, """controllers.HomeController.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """songs""", """controllers.SongController.index()"""),
     ("""GET""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """songs/edit/""" + "$" + """id<[^/]+>""", """controllers.SongController.edit(id:Integer)"""),
     ("""POST""", this.prefix + (if(this.prefix.endsWith("/")) "" else "/") + """songs/update""", """controllers.SongController.update()"""),
@@ -63,17 +63,17 @@ class Routes(
 
   // @LINE:6
   private[this] lazy val controllers_HomeController_index0_route = Route("GET",
-    PathPattern(List(StaticPart(this.prefix), StaticPart(this.defaultPrefix), StaticPart("index/"), DynamicPart("nombre", """[^/]+""",true), StaticPart("/"), DynamicPart("apellido", """[^/]+""",true)))
+    PathPattern(List(StaticPart(this.prefix)))
   )
   private[this] lazy val controllers_HomeController_index0_invoker = createInvoker(
-    HomeController_0.index(fakeValue[String], fakeValue[String]),
+    HomeController_0.index(),
     play.api.routing.HandlerDef(this.getClass.getClassLoader,
       "router",
       "controllers.HomeController",
       "index",
-      Seq(classOf[String], classOf[String]),
+      Nil,
       "GET",
-      this.prefix + """index/""" + "$" + """nombre<[^/]+>/""" + "$" + """apellido<[^/]+>""",
+      this.prefix + """""",
       """ An example controller showing a sample home page""",
       Seq()
     )
@@ -246,8 +246,8 @@ class Routes(
   
     // @LINE:6
     case controllers_HomeController_index0_route(params) =>
-      call(params.fromPath[String]("nombre", None), params.fromPath[String]("apellido", None)) { (nombre, apellido) =>
-        controllers_HomeController_index0_invoker.call(HomeController_0.index(nombre, apellido))
+      call { 
+        controllers_HomeController_index0_invoker.call(HomeController_0.index())
       }
   
     // @LINE:8

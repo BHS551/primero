@@ -1453,5 +1453,6 @@
       </library>
     </orderEntry>
     <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="SBT: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final:jar" level="project" />
   </component>
 </module>

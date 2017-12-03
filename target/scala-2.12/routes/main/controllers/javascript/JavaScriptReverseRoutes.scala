@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/551br/Documents/Repos/play/primero/conf/routes
-// @DATE:Sat Oct 21 23:43:46 COT 2017
+// @DATE:Wed Nov 01 18:22:03 COT 2017
 
 import play.api.routing.JavaScriptReverseRoute
 
@@ -114,8 +114,8 @@ package controllers.javascript {
     def index: JavaScriptReverseRoute = JavaScriptReverseRoute(
       "controllers.HomeController.index",
       """
-        function(nombre0,apellido1) {
-          return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "index/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("nombre", nombre0)) + "/" + encodeURIComponent((""" + implicitly[play.api.mvc.PathBindable[String]].javascriptUnbind + """)("apellido", apellido1))})
+        function() {
+          return _wA({method:"GET", url:"""" + _prefix + """"})
         }
       """
     )

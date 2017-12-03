@@ -33,7 +33,7 @@ object songEdit extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.H
 
 Seq[Any](format.raw/*1.24*/("""
 """),_display_(/*3.2*/layout("Edit Song")/*3.21*/{_display_(Seq[Any](format.raw/*3.22*/("""<h1>edit song</h1>
-    """),_display_(/*4.6*/helper/*4.12*/.form(action = routes.SongController.update())/*4.58*/{_display_(Seq[Any](format.raw/*4.59*/("""
+    """),_display_(/*4.6*/helper/*4.12*/.form(CSRF(routes.SongController.update()))/*4.55*/{_display_(Seq[Any](format.raw/*4.56*/("""
         """),_display_(/*5.10*/helper/*5.16*/.inputText(songForm("id"))),format.raw/*5.42*/("""
         """),_display_(/*6.10*/helper/*6.16*/.inputText(songForm("name"))),format.raw/*6.44*/("""
         """),_display_(/*7.10*/helper/*7.16*/.inputText(songForm("length"))),format.raw/*7.46*/("""
@@ -57,10 +57,10 @@ Seq[Any](format.raw/*1.24*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 21 23:43:48 COT 2017
+                  DATE: Sun Nov 05 20:56:50 COT 2017
                   SOURCE: C:/Users/551br/Documents/Repos/play/primero/app/views/songEdit.scala.html
-                  HASH: eebd77bcdd8448d2ea70a0479f92cb1b27a39b5f
-                  MATRIX: 955->1|1050->26|1095->23|1123->44|1150->63|1188->64|1238->89|1252->95|1306->141|1344->142|1381->153|1395->159|1441->185|1478->196|1492->202|1540->230|1577->241|1591->247|1641->277|1678->288|1692->294|1742->324|1781->336|1862->387
+                  HASH: 44b57aac03831f081de270c641617c45e06de2c2
+                  MATRIX: 955->1|1050->26|1095->23|1123->44|1150->63|1188->64|1238->89|1252->95|1303->138|1341->139|1378->150|1392->156|1438->182|1475->193|1489->199|1537->227|1574->238|1588->244|1638->274|1675->285|1689->291|1739->321|1778->333|1859->384
                   LINES: 28->1|31->2|34->1|35->3|35->3|35->3|36->4|36->4|36->4|36->4|37->5|37->5|37->5|38->6|38->6|38->6|39->7|39->7|39->7|40->8|40->8|40->8|42->10|43->11
                   -- GENERATED --
               */

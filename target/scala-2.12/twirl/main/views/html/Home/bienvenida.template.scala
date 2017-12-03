@@ -52,7 +52,7 @@ Seq[Any](format.raw/*1.37*/("""
 
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 21 23:43:48 COT 2017
+                  DATE: Wed Nov 01 15:35:52 COT 2017
                   SOURCE: C:/Users/551br/Documents/Repos/play/primero/app/views/Home/bienvenida.scala.html
                   HASH: 610eccf48f1153ff16c3894677e9e4fba21b0b52
                   MATRIX: 965->1|1095->36|1125->40

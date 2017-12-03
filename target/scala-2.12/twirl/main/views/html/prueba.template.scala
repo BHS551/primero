@@ -53,7 +53,7 @@ Seq[Any](format.raw/*1.1*/("""<html>
 
               /*
                   -- GENERATED --
-                  DATE: Sat Oct 21 23:43:47 COT 2017
+                  DATE: Wed Nov 01 15:35:52 COT 2017
                   SOURCE: C:/Users/551br/Documents/Repos/play/primero/app/views/prueba.scala.html
                   HASH: 04085b5fd1b6d50fcf606488633556755b1c8062
                   MATRIX: 1031->0

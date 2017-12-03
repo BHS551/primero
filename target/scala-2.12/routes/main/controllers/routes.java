@@ -1,7 +1,7 @@
 
 // @GENERATOR:play-routes-compiler
 // @SOURCE:C:/Users/551br/Documents/Repos/play/primero/conf/routes
-// @DATE:Sat Oct 21 23:43:46 COT 2017
+// @DATE:Wed Nov 01 18:22:03 COT 2017
 
 package controllers;
 
